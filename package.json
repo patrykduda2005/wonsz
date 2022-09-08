@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "@types/node": "^18.7.16",
+    "browserify": "^17.0.0"
+  },
+  "dependencies": {
+    "phaser": "^3.55.2"
+  },
+  "name": "wonsz",
+  "version": "0.0.1",
+  "description": "Gra o wonszu klasowym, kremowce i Ojcu dariuszu",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "browserify src/main.js -o bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrykduda2005/wonsz.git"
+  },
+  "author": "Patryk Duda, SideArker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patrykduda2005/wonsz/issues"
+  },
+  "homepage": "https://github.com/patrykduda2005/wonsz#readme"
+}
