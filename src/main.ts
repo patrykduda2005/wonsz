@@ -1,5 +1,6 @@
-const Phaser = require("phaser");
-const TestScena = require("./scenes/TestScena.js");
+export{};
+const Phaser = require('phaser');
+const TestScena = require('./scenes/TestScena');
 
 var config = {
     type: Phaser.Auto,

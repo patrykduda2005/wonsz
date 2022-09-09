@@ -11,7 +11,7 @@
   "description": "Gra o wonszu klasowym, kremowce i Ojcu dariuszu",
   "main": "src/main.js",
   "scripts": {
-    "build": "browserify src/main.js -o bundle.js"
+    "compile": "tsc && browserify dist/main.js -o bundle.js"
   },
   "repository": {
     "type": "git",
