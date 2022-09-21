@@ -1,9 +1,9 @@
 "use strict";
 exports.__esModule = true;
-var Phaser = require('phaser');
-var TestScena = require('./scenes/TestScena');
+var Phaser = require("phaser");
+var TestScena = require("./scenes/TestScena");
 var config = {
-    type: Phaser.Auto,
+    type: Phaser.AUTO,
     scale: {
         mode: Phaser.Scale.FIT,
         width: 1280,

@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -13,7 +14,8 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var Phaser = require('phaser');
+exports.__esModule = true;
+var Phaser = require("phaser");
 var TestScena = /** @class */ (function (_super) {
     __extends(TestScena, _super);
     function TestScena() {

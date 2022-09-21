@@ -1,9 +1,8 @@
-export{};
-const Phaser = require('phaser');
-const TestScena = require('./scenes/TestScena');
+import * as Phaser from 'phaser';
+import * as TestScena from './scenes/TestScena';
 
 var config = {
-    type: Phaser.Auto,
+    type: Phaser.AUTO,
     scale: {
         mode: Phaser.Scale.FIT,
         width: 1280,
