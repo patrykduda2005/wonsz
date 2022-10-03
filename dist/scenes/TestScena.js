@@ -16,10 +16,20 @@ var __extends = (this && this.__extends) || (function () {
 })();
 exports.__esModule = true;
 var Phaser = require("phaser");
+var Player_1 = require("../classes/Player");
+//import Player = require('../classes/Player);
 var TestScena = /** @class */ (function (_super) {
     __extends(TestScena, _super);
     function TestScena() {
         return _super.call(this, { key: "TestScena" }) || this;
     }
+    TestScena.prototype.preload = function () {
+    };
+    TestScena.prototype.create = function () {
+        var player = new Player_1["default"](this.matter.world, 100, 100);
+    };
+    TestScena.prototype.update = function () {
+    };
     return TestScena;
 }(Phaser.Scene));
+exports["default"] = TestScena;
