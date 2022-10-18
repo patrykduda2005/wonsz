@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            body {
+                margin:0;
+                border:0;
+                width: 100%;
+                height: 100vh;
+            }
+        </style>
+        <title>Wonsz</title>
+    <script defer src="main.js"></script></head>
+    <body>
+    </body>
+    
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker
+                    .register("service-worker.js")
+                    .then((registration) => {
+                        console.log("Service Worker registered: ", registration);
+                    })
+                    .catch((registrationError) => {
+                        console.error("Service Worker registration failed: ", registrationError);
+                    });
+            });
+        }
+    </script>
+    <script src="./dist/main.js"></script>
+</html>

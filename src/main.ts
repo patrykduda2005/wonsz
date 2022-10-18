@@ -1,10 +1,10 @@
-import * as Phaser from 'phaser';
-import * as TestScena from './scenes/TestScena';
+import 'phaser';
+import TestScena from './scenes/TestScena';
 
 var config = {
     type: Phaser.AUTO,
     scale: {
-        mode: Phaser.Scale.FIT,
+        mode: Phaser.Scale.RESIZE,
         width: 1280,
         height: 720,
         autocenter: Phaser.Scale.CENTER_BOTH
@@ -16,7 +16,7 @@ var config = {
             gravity: {y:0}
         }
     },
-    Scene: [TestScena]
+    scene: [TestScena]
 };
 
 var game = new Phaser.Game(config);

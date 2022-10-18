@@ -1,17 +1,28 @@
 {
   "devDependencies": {
     "@types/node": "^18.7.16",
-    "browserify": "^17.0.0"
+    "@webpack-cli/generators": "^2.5.0",
+    "html-webpack-plugin": "^5.5.0",
+    "prettier": "^2.7.1",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.8.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "workbox-webpack-plugin": "^6.5.4"
   },
   "dependencies": {
     "phaser": "^3.55.2"
   },
   "name": "wonsz",
   "version": "0.0.1",
-  "description": "Gra o wonszu klasowym, kremowce i Ojcu dariuszu",
+  "description": "Gra o wonszu klasowym, kremowce i Ojcu Dariusze",
   "main": "src/main.js",
   "scripts": {
-    "compile": "tsc && browserify dist/main.js -o bundle.js"
+    "compile": "tsc && browserify dist/main.js -o bundle.js",
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
