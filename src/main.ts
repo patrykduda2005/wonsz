@@ -1,22 +1,23 @@
 import 'phaser';
 import TestScena from './scenes/TestScena';
+import SceneManager from './SceneManager';
 
 var config = {
     type: Phaser.AUTO,
     scale: {
-        mode: Phaser.Scale.RESIZE,
+        mode: Phaser.Scale.FIT,
         width: 1280,
         height: 720,
-        autocenter: Phaser.Scale.CENTER_BOTH
+        autoCenter: Phaser.Scale.Center.CENTER_BOTH
     },
     physics: {
         default: 'matter',
         matter: {
             debug: true,
-            gravity: {y:0}
+            gravity: {y:5}
         }
     },
-    scene: [TestScena]
+    scene: [SceneManager, TestScena]
 };
 
 var game = new Phaser.Game(config);
